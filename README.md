@@ -9,9 +9,8 @@ The site cancels the registration if the email is already used, if the password 
 The user can log out.
 
 Here is the structure of the database that should be used with this code : 
-
 DATABASE : Hospital
+TABLES : 
+- Doctor(idDoctor INT AUTO_INC, Name TEXT NOT NULL, Password TEXT NOT NULL, email TEXT NOT NULL, specialty TEXT);
 
-TABLES : - Doctor(idDoctor INT AUTO_INC, Name TEXT NOT NULL, Password TEXT NOT NULL, email TEXT NOT NULL, specialty TEXT);
-
-         - Patient(idPatient INT AUTO_INC, Name TEXT NOT NULL, Password TEXT NOT NULL, email TEXT NOT NULL, idDoctor INT NOT NULL)
+- Patient(idPatient INT AUTO_INC, Name TEXT NOT NULL, Password TEXT NOT NULL, email TEXT NOT NULL, idDoctor INT NOT NULL)
